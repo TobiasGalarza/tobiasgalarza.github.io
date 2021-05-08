@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portal de Oficios</title>
+    <script src="https://kit.fontawesome.com/304ead0164.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/tools-icon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header style="background-color: dodgerblue;">
+        <h1>Portal de Oficios</h1>
+        <nav>
+            <a href="index.html">inicio</a>
+            <a href="search.html">búsqueda</a>
+            <a href="join.html">únete</a>
+            <a href="login.html">iniciá sesión</a>
+        </nav>
+    </header>
+
+    <div>
+        <h2>¿Cómo hago para formar parte del Portal de Oficios?</h2>
+        <p>Formar parte del portal es totalmente gratuito. Registrate con un email y contraseña, completá el formulario de inscripción y tu trabajo ya será visible para cientos de personas</p>
+    </div>
+
+    <div>
+        <form action="">
+            <h3>Datos Personales</h3>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" required>
+            <br>
+            <label for="dni">DNI</label>
+            <input type="number" name="dni" id="dni" required>
+            <label for="celular">Celular</label>
+            <input type="tel" name="celular" id="celular" placeholder="362 4123456" pattern="[0-9]{3} [0-9]{7}" required>
+            <br>
+            <label for="domicilio">Domicilio</label>
+            <input type="text" name="domicilio" id="domicilio" required>
+            <label for="altura">Altura</label>
+            <input type="number" name="altura" id="altura" required>
+            <br>
+            <label for="localidad">Localidad</label>
+            <select name="localidad" id="localidad" required>
+				<option value="" selected></option>
+				<option value="resistencia">Resistencia</option>
+				<option value="corrientes">Corrientes</option>
+				<option value="barranqueras">Barranqueras</option>
+				<option value="fontana">Fontana</option>
+				<option value="puertotirol">Puerto Tirol</option>
+				<option value="puertovilelas">Puerto Vilelas</option>
+			</select>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <h3>Datos de tu Oficio o Servicio</h3>
+            <label for="rubro">Rubro del oficio o servicio prestado</label> <br>
+            <select name="rubro" id="rubro" required>
+				<option value="" selected></option>
+				<option value="electricista">Electricista</option>
+				<option value="plomeria">Plomería</option>
+				<option value="gasista">Gasista</option>
+				<option value="jardineria">Jardinería</option>
+				<option value="albanileria">Albañilería</option>
+				<option value="herreria">Herrería</option>
+				<option value="cerrajeria">Cerrajería</option>
+				<option value="fotografia">Fotografía</option>
+				<option value="informatica">Informática</option>
+				<option value="carpinteria">Carpintería</option>
+				<option value="maquillaje">Maquillaje</option>
+				<option value="mecanica">Mecánica Automotor</option>
+				<option value=""></option>
+				<option value=""></option>
+			</select>
+            <br>
+            <label for="descripcion">Breve descripción del oficio o servicio prestado</label> <br>
+            <textarea name="descripcion" id="descripcion" rows="5" cols="30" required></textarea> <br>
+            <label for="cobertura">Área de cobertura</label> <br>
+            <select name="cobertura" id="cobertura" multiple required>
+				<option value=""></option>
+				<option value="resistencia">Resistencia</option>
+				<option value="corrientes">Corrientes</option>
+				<option value="barranqueras">Barranqueras</option>
+				<option value="fontana">Fontana</option>
+				<option value="puertotirol">Puerto Tirol</option>
+				<option value="puertovilelas">Puerto Vilelas</option>
+			</select>
+
+            <h3>Redes Sociales</h3>
+            <label for="facebook">Link Facebook</label>
+            <input type="url" id="facebook" name="facebook">
+            <label for="instagram">Link Instagram</label>
+            <input type="url" id="instagram" name="instagram">
+
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <aside style="background-color: gray; ">
+        PUBLICIDAD
+    </aside>
+
+    <footer style="background-color: dodgerblue;">
+        <p><b>&#169todos los derechos reservados</b></p>
+        <div>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

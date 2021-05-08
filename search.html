@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portal de Oficios</title>
+    <script src="https://kit.fontawesome.com/304ead0164.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/tools-icon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header style="background-color: dodgerblue;">
+        <h1>Portal de Oficios</h1>
+        <nav>
+            <a href="index.html">inicio</a>
+            <a href="search.html">búsqueda</a>
+            <a href="join.html">únete</a>
+            <a href="login.html">iniciá sesión</a>
+        </nav>
+    </header>
+
+    <aside>
+        <div>
+            <h2>Nueva Búsqueda</h2>
+            <form action="">
+                <input type="submit" value="Buscar">
+                <input type="reset" value="Limpiar">
+                <label for="ordenar">Ordenar por:</label>
+                <select name="ordenar" id="ordenar">
+					<option value="nombre">nombre</option>
+					<option value="masCercano">más cercano</option>
+					<option value="calificacion">calificación</option>
+				</select>
+                <br>
+                <br>
+                <fieldset>
+                    Locación <br>
+                    <input type="checkbox" name="locacion" id="resistencia" value="resistencia">
+                    <label for="resistencia">Resistencia</label> <br>
+                    <input type="checkbox" name="locacion" id="corrientes" value="corrientes">
+                    <label for="corrientes">Corrientes</label> <br>
+                    <input type="checkbox" name="locacion" id="barranqueras" value="barranqueras">
+                    <label for="barranqueras">Barranqueras</label> <br>
+                    <input type="checkbox" name="locacion" id="fontana" value="fontana">
+                    <label for="fontana">Fontana</label> <br>
+                    <input type="checkbox" name="locacion" id="puertotirol" value="puertotirol">
+                    <label for="puertotirol">Puerto Tirol</label> <br>
+                    <input type="checkbox" name="locacion" id="puertovilelas" value="puertovilelas">
+                    <label for="puertovilelas">Puerto Vilelas</label> <br>
+                </fieldset>
+
+                <fieldset>
+                    Categorías <br>
+                    <input type="checkbox" id="albanileria" name="categoria" value="albanileria">
+                    <label for="albanileria">Albañilería</label> <br>
+                    <input type="checkbox" id="carpinteria" name="categoria" value="carpinteria">
+                    <label for="carpinteria">Carpintería</label> <br>
+                    <input type="checkbox" id="jardineria" name="categoria" value="jardineria">
+                    <label for="jardineria">Jardinería</label> <br>
+                    <input type="checkbox" id="plomeria" name="categoria" value="plomeria">
+                    <label for="plomeria">Plomería</label> <br>
+                    <input type="checkbox" id="electricista" name="categoria" value="electricista">
+                    <label for="electricista">Electricista</label> <br>
+                    <input type="checkbox" id="herreria" name="categoria" value="herreria">
+                    <label for="herreria">Herrería</label> <br>
+                    <input type="checkbox" id="maquillaje" name="categoria" value="maquillaje">
+                    <label for="maquillaje">Maquillaje</label> <br>
+                    <input type="checkbox" id="informatica" name="categoria" value="informatica">
+                    <label for="informatica">Informática </label> <br>
+                    <input type="checkbox" id="mecanica" name="categoria" value="mecanica">
+                    <label for="mecanica">Mecánica Automotor</label> <br>
+                    <input type="checkbox" id="cerrajeria" name="categoria" value="cerrajeria">
+                    <label for="cerrajeria">Cerrajería</label> <br>
+                    <input type="checkbox" id="fotografia" name="categoria" value="fotografia">
+                    <label for="fotografia">Fotografía</label> <br>
+                    <input type="checkbox" id="gasista" name="categoria" value="gasista">
+                    <label for="gasista">Gasista</label> <br>
+                </fieldset>
+            </form>
+        </div>
+    </aside>
+
+    <section>
+        <article class="cards">
+            <h3>Cosme Fulanito</h3>
+            <p>breve descripcion del servicio: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore officiis est nesciunt laborum molestias modi placeat odio eaque. Placeat, totam.</p>
+            <p><b>Ubicación:</b> Springfield</p>
+            <p>Calificación: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+            Contacto:
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <br>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7080.234236036724!2d-58.988661283003026!3d-27.465612982721535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450c94add4ae63%3A0xa85b9dd8d48e39c3!2sAUROFR%C3%8DO%20Repuestos%20Instalaciones%20y%20Servicios%20t%C3%A9cnicos!5e0!3m2!1ses!2sar!4v1619572863244!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </article>
+    </section>
+
+    <aside style="background-color: gray; ">
+        PUBLICIDAD
+    </aside>
+
+    <footer style="background-color: dodgerblue;">
+        <p><b>&#169todos los derechos reservados</b></p>
+        <div>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
