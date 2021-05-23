@@ -74,11 +74,17 @@ aside {
     margin-left: 1rem;
 }
 
+#main-index>* {
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: .5rem;
+}
+
 #intro-index {
     grid-area: intro;
     padding: 1rem;
-    border-radius: .5rem;
     background-color: #DEEBF7;
+    font-size: large;
 }
 
 #carouselExampleCaptions {
@@ -87,6 +93,17 @@ aside {
 
 .carousel-item {
     height: 70vh;
+    background-color: black;
+}
+
+.carousel-item img {
+    opacity: 0.4;
+}
+
+.carousel-caption {
+    font-size: large;
+    margin: 8% auto;
+    /*line-height: 100%;*/
 }
 
 
@@ -97,6 +114,11 @@ aside {
     grid-template-columns: 1fr 4fr;
     grid-template-areas: "aside section";
     gap: 1rem;
+}
+
+#main-search input,
+#main-search select {
+    font-size: 1rem;
 }
 
 section {
@@ -117,7 +139,8 @@ aside h2 {
     padding: 1rem;
     box-sizing: border-box;
     border-radius: .5rem;
-    min-width: 223px;
+    min-width: 255px;
+    font-size: large;
 }
 
 .cards h3 {
@@ -137,12 +160,34 @@ aside h2 {
     border-radius: .5rem;
 }
 
+.transition {
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.transition::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: .5rem;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.transition:hover::before {
+    opacity: 1;
+}
+
 
 /*join*/
 
 #main-join {
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 7fr;
     grid-template-areas: "intro" "form";
     grid-gap: 1rem;
 }
@@ -153,6 +198,7 @@ aside h2 {
     padding: 1rem;
     box-sizing: border-box;
     border-radius: .5rem;
+    font-size: large;
 }
 
 #intro-join h2 {
@@ -166,6 +212,34 @@ aside h2 {
     box-sizing: border-box;
     border-radius: .5rem;
     font-size: x-large;
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.field-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem 0;
+}
+
+.field-form div {
+    width: 48%;
+}
+
+.field-form select,
+#form-join input,
+textarea {
+    font-size: large;
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    margin-top: .5rem;
+    height: 9rem;
 }
 
 
@@ -186,6 +260,7 @@ aside h2 {
     padding: 1rem;
     box-sizing: border-box;
     border-radius: .5rem;
+    font-size: large;
 }
 
 #intro-login h2 {
@@ -200,7 +275,8 @@ aside h2 {
     padding: 2rem;
     box-sizing: border-box;
     border-radius: .5rem;
-    font-size: x-large;
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 #form-login form {
@@ -211,8 +287,9 @@ aside h2 {
 }
 
 #form-login input {
+    font-size: large;
     width: 100%;
-    height: 25%;
+    height: 2.5rem;
     border-radius: 0.5rem;
     box-sizing: border-box;
 }
