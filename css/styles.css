@@ -319,9 +319,12 @@
 	    }
 	}
 	
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 470px) {
 	    .carousel-item img {
 	        height: 60vh;
+	    }
+	    .carousel-caption {
+	        font-size: small;
 	    }
 	    .field-form div {
 	        width: 100%;
@@ -338,13 +341,17 @@
 	        justify-content: space-around;
 	    }
 	    .item-1 {
-	        order: -3;
+	        order: 1;
 	    }
 	    .item-2 {
-	        order: -2;
+	        order: 2;
 	    }
 	    .item-3 {
-	        order: -1;
+	        order: 3;
+	    }
+	    fieldset {
+	        width: 48%;
+	        box-sizing: border-box;
 	    }
 	    section {
 	        justify-content: center;
