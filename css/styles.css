@@ -1,3 +1,12 @@
+	/* para tener en cuenta para estandarizar en todos los navegadores.
+	
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	*/
 	/*grid a nivel general del sitio web*/
 	
 	body {
@@ -25,9 +34,8 @@
 	    grid-area: nav;
 	}
 	
-	header a:link,
-	a:hover,
-	a:visited {
+	header a,
+	a:hover {
 	    color: ghostwhite;
 	    text-decoration-line: none;
 	    font-weight: bold;
@@ -299,6 +307,7 @@
 	}
 	
 	@media screen and (max-width: 796px) {
+	    /*tablets*/
 	    header {
 	        flex-wrap: wrap;
 	    }
@@ -320,6 +329,8 @@
 	}
 	
 	@media screen and (max-width: 470px) {
+	    /*celulares*/
+	    /* and (aspect-ratio: 4/9)*/
 	    .carousel-item img {
 	        height: 60vh;
 	    }
